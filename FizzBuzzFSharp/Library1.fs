@@ -2,12 +2,6 @@
 
 module FizzBuzz = 
 
-  type Results =
-    | Fizz
-    | Buzz
-    | FizzBuzz
-
-
   let fizzBuzz number = 
     match  (number % 3) + (number % 5)  with
       | 0 -> "FizzBuzz" 
@@ -17,11 +11,10 @@ module FizzBuzz =
           | _ -> 
             match number % 3 with
               | 0 -> "Fizz"
-              | n -> n.ToString()
+              | _ -> string number
             
   
   let a = fizzBuzz 3
-
 
 
 namespace FizzBuzzFSharpTests
@@ -56,6 +49,7 @@ module Tests =
   [<InlineData(3, "Fizz")>]
   [<InlineData(5, "Buzz")>]
   [<InlineData(1, "1")>]
+  [<InlineData(44, "44")>]
   [<InlineData(15, "FizzBuzz")>]
   [<InlineData(33, "Fizz")>]
   [<InlineData(90, "FizzBuzz")>]

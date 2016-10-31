@@ -16,6 +16,7 @@ open System.IO
       File.ReadLines("dictionary.txt")
 
     let TextInWoerterZerlegen text = ""
+    let WörterbuchAuslesen () = ""
 
 
 namespace FlowDesignFSharpTests

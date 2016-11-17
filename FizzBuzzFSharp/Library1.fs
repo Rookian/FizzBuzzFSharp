@@ -28,8 +28,8 @@ module Tests =
   let ``Sollte Fizz bei durch 3 teilbaren Zahlen ausgeben`` () =
     let result = fizzBuzz 3
     Assert.Equal("Fizz", result)
-
   [<Fact>]
+
   let ``Sollte Buzz bei durch 5 teilbaren Zahlen ausgeben`` () =
     let result = fizzBuzz 5
     Assert.Equal("Buzz", result)
